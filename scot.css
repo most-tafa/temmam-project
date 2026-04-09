@@ -15,9 +15,6 @@ hr {
   color: #2d2f3114;
 }
 
-/* ===============================
-   SIDEBAR
-================================= */
 .aside {
   width: 20%;
   background: #ffffff;
@@ -27,10 +24,10 @@ hr {
   justify-content: space-between;
   border-right: 1px solid #eee;
 
-  position: fixed; /* هذا يجعلها ثابتة على الشاشة */
-  top: 0; /* من أعلى الشاشة */
-  left: 0; /* على اليسار */
-  height: 100vh; /* كامل ارتفاع الشاشة */
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
   overflow-y: auto;
   z-index: 100;
 }
@@ -63,13 +60,9 @@ hr {
 }
 
 .seting {
-  /* margin-top: 685px; */
   height: 10%;
 }
 
-/* ===============================
-   CONTENT
-================================= */
 .content {
   flex: 1;
   display: flex;
@@ -77,9 +70,6 @@ hr {
   margin-left: 20%;
 }
 
-/* ===============================
-   HEADER
-================================= */
 header {
   background: #ffffff;
   padding: 18px 30px;
@@ -122,9 +112,6 @@ header {
   border-radius: 50%;
 }
 
-/* ===============================
-   MAIN
-================================= */
 main {
   padding: 30px;
 }
@@ -141,9 +128,6 @@ main h6 {
   margin-bottom: 20px;
 }
 
-/* ===============================
-   CARDS
-================================= */
 .card,
 .assignee-card,
 .card6 > .card {
@@ -247,7 +231,6 @@ hr {
   gap: 15px;
 }
 
-/* الصورة */
 .customer-card .profile img {
   width: 50px;
   height: 50px;
@@ -255,7 +238,6 @@ hr {
   object-fit: cover;
 }
 
-/* معلومات الشخص */
 .customer-card .profile .info h5 {
   margin: 0;
   font-size: 16px;
@@ -267,32 +249,24 @@ hr {
   color: #64748b;
 }
 
-/* لون رقم الهاتف أزرق */
 .customer-card .profile .info p:last-child {
-  color: #3b82f6; /* هذا السطر يجعل رقم الهاتف أزرق */
-  font-weight: 500; /* اختياري */
+  color: #3b82f6;
+  font-weight: 500;
 }
-/* ===============================
-   NOTES
-================================= */
-/* إخفاء الراديو */
 .card input[type="radio"] {
   display: none;
 }
 
-/* التبويب النشط */
 #active:checked ~ .tabs label[for="active"],
 #received:checked ~ .tabs label[for="received"] {
   background: #6366f1;
   color: #fff;
 }
 
-/* إخفاء كل المحتوى */
 .card .content {
   display: none;
 }
 
-/* تنسيق بسيط للملاحظة */
 .note {
   margin-top: 10px;
 }
@@ -353,9 +327,6 @@ hr {
   margin-top: 0 !important;
 }
 
-/* ===============================
-   ROW BOTTOM
-================================= */
 .rowbottom {
   display: flex;
   gap: 20px;
@@ -377,9 +348,6 @@ hr {
   flex: 1;
 }
 
-/* ===============================
-   PROFILE
-================================= */
 .profile-slider {
   display: flex;
   align-items: center;
@@ -417,15 +385,13 @@ hr {
 }
 
 .card7 {
-  /* احذف width لو موجود */
-  /* خليه ياخذ نفس حجم الكاردات الثانية */
   padding: 15px;
 }
 
 .row {
   display: flex;
   align-items: center;
-  justify-content: space-between; /* يخلي التوزيع مرتب داخل نفس العرض */
+  justify-content: space-between;
   margin-bottom: 12px;
 }
 
@@ -436,7 +402,7 @@ hr {
 
 .dots {
   display: flex;
-  gap: 8px; /* 🔥 هنا كبرنا المسافة */
+  gap: 8px;
 }
 
 .dot {
@@ -454,9 +420,7 @@ hr {
   margin-left: 10px;
   font-size: 14px;
 }
-/* ===============================
-   CUSTOMER CARD
-================================= */
+
 .image {
   display: flex;
   justify-content: center;
@@ -475,14 +439,13 @@ hr {
   position: relative;
 }
 
-/* textarea */
 .input-wrapper textarea {
   width: 100%;
   height: 90px;
   background: #f8fafc;
   border-radius: 12px;
   border: 1px solid #e2e8f0;
-  padding: 14px 12px 12px 42px; /* 🔥 مساحة للأيقونة */
+  padding: 14px 12px 12px 42px;
   resize: none;
   outline: none;
   font-size: 14px;
@@ -490,23 +453,20 @@ hr {
   font-family: inherit;
 }
 
-/* hover */
 .input-wrapper textarea:hover {
   border-color: #cbd5e1;
 }
 
-/* focus احترافي */
 .input-wrapper textarea:focus {
   border-color: #4a6cf7;
   background: #fff;
   box-shadow: 0 0 0 3px rgba(74, 108, 247, 0.1);
 }
 
-/* الأيقونة */
 .input-wrapper .icon {
   position: absolute;
   left: 12px;
-  top: 14px; /* 🔥 مرفوعة بشكل مدروس */
+  top: 14px;
   width: 18px;
   height: 18px;
   color: #94a3b8;
@@ -514,12 +474,10 @@ hr {
   transition: 0.3s;
 }
 
-/* تغيير لون الأيقونة عند التركيز */
 .input-wrapper textarea:focus + .icon,
 .input-wrapper textarea:focus ~ .icon {
   color: #4a6cf7;
 }
-/* الكارد */
 .attachments-card {
   width: 300px;
   background: #fff;
@@ -529,7 +487,6 @@ hr {
   font-family: Arial, sans-serif;
 }
 
-/* الهيدر */
 .card-header {
   display: flex;
   justify-content: space-between;
@@ -542,7 +499,6 @@ hr {
   font-weight: 600;
 }
 
-/* زر الإضافة */
 .icon-btn {
   border: none;
   background: #eef2ff;
@@ -559,7 +515,6 @@ hr {
   color: #fff;
 }
 
-/* كل ملف */
 .file {
   display: flex;
   justify-content: space-between;
@@ -576,13 +531,11 @@ hr {
   border-radius: 8px;
 }
 
-/* اسم الملف */
 .file-name {
   font-size: 13px;
   font-weight: 500;
 }
 
-/* التفاصيل */
 .file-meta {
   font-size: 11px;
   color: #94a3b8;
@@ -591,7 +544,6 @@ hr {
   gap: 8px;
 }
 
-/* نوع الملف */
 .type {
   background: #eef2ff;
   color: #6366f1;
@@ -605,14 +557,12 @@ hr {
   color: #ef4444;
 }
 
-/* الأزرار */
 .file-actions {
   display: flex;
   align-items: center;
   gap: 6px;
 }
 
-/* زر التحميل */
 .download-btn {
   width: 32px;
   height: 32px;
@@ -638,7 +588,6 @@ hr {
   transform: translateY(-1px);
 }
 
-/* زر المزيد */
 .more-btn {
   border: none;
   background: transparent;
@@ -652,7 +601,6 @@ hr {
   color: #111827;
 }
 
-/* See all */
 .see-all {
   text-align: center;
   margin-top: 10px;
@@ -666,18 +614,11 @@ hr {
   color: #6366f1;
 }
 
-/* --- news  */
-/* ===============================
-   RESPONSIVE
-================================= */
-
-/* 📱 موبايل */
 @media (max-width: 768px) {
   body {
     flex-direction: column;
   }
 
-  /* اخفاء السايدبار */
   .aside {
     position: relative;
     width: 100%;
@@ -695,15 +636,13 @@ hr {
   }
 
   .saidbaar h5 {
-    display: none; /* نخلي فقط الأيقونات */
+    display: none;
   }
 
-  /* المحتوى */
   .content {
     margin-left: 0;
   }
 
-  /* الهيدر */
   header {
     flex-direction: column;
     gap: 10px;
@@ -714,7 +653,6 @@ hr {
     width: 100%;
   }
 
-  /* الصف العلوي */
   .rowtop {
     flex-direction: column;
   }
@@ -723,7 +661,6 @@ hr {
     max-width: 100%;
   }
 
-  /* الفورم */
   .aa {
     grid-template-columns: 1fr;
   }
@@ -732,7 +669,6 @@ hr {
     flex-direction: column;
   }
 
-  /* الصف السفلي */
   .rowbottom {
     flex-direction: column;
   }
@@ -745,13 +681,11 @@ hr {
     grid-column: span 1;
   }
 
-  /* الكارد الأخير */
   .attachments-card {
     width: 100%;
   }
 }
 
-/* 📲 تابلت */
 @media (max-width: 1024px) {
   .aside {
     width: 70px;
